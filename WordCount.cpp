@@ -191,7 +191,7 @@ void WordCount::dumpWordsSortedByOccurence(std::ostream &out) const {
 void WordCount::addAllWords(std::string text) {
   int x=0;
   std::string res = "";
-  for(int i=0;i<text.size();i++)
+  for(unsigned i=0;i<text.size();i++)
     {
       if(x > -1)
 	{

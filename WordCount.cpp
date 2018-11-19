@@ -197,7 +197,8 @@ void WordCount::addAllWords(std::string text) {
 	{
 	  if(text[i]== ' ' || text[i] == '\n')
 	    {
-	      x = incrWordCount(res);
+	      std::string temp = stripWord(res);
+	      x = incrWordCount(temp);
 	      res = "";
 	    }
 	  else
@@ -206,6 +207,6 @@ void WordCount::addAllWords(std::string text) {
 	    }
 	}
     }
-  x = incrWordCount(res);
+  x = incrWordCount(stripWord(res));
 	return;
 }

@@ -115,7 +115,7 @@ std::string WordCount::stripWord(std::string word) {
 	{
 	  res+=word[i];
 	}
-      else if(word[i]=='/' || word[i]=='-')
+      else if(word[i]=='\'' || word[i]=='-')
 	{
 	  if(i==0 || i==word.length()-1)
 	    {

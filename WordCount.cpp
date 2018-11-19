@@ -206,6 +206,6 @@ void WordCount::addAllWords(std::string text) {
 	    }
 	}
     }
-  x = incrWordCount(stripWord(res));
+  x = incrWordCount(res);
 	return;
 }
